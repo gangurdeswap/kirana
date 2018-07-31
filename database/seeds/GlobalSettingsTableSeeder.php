@@ -26,11 +26,6 @@ class GlobalSettingsTableSeeder extends Seeder {
                 'value' => 'test@email.com',
                 'field_type' => 1
             ],
-            [
-                'name' => 'copyright',
-                'value' => 'Ⓒ 2018 Test Project',
-                'field_type' => 2
-            ],
         ]);
     }
 

@@ -50,7 +50,7 @@
                         @endif
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" style="display: none;">
                         <label>User Type</label>
                         <br/>
                         <input type="radio" name="user_type" value="0" @if($user_info->user_type==0) checked="" @endif />

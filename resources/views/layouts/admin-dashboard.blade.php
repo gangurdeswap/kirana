@@ -44,11 +44,13 @@
 
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
+                              @if(env('IS_MULTILANGUAGE'))
                             <li class="dropdown messages-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                     <i class="fa fa-language"></i>
                                     <!--<span class="label label-success">4</span>-->
                                 </a>
+
                                 <ul class="dropdown-menu">
                                     <li class="header">Select Language</li>
                                     @php
@@ -69,6 +71,7 @@
                                     @endforeach
                                 </ul>
                             </li>
+                            @endif
                             <li class="dropdown user user-menu">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="{{asset('/css/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
@@ -118,7 +121,7 @@
             <!-- DataTables -->
             @yield('js_content')
             <footer class="main-footer">
-                <strong>Copyright &copy; 2018-2019 <a href="javascript:void(0);">Enyota Learning</a>.</strong> All rights
+                <strong>Copyright &copy; 2018-2019 <a href="javascript:void(0);">Kirana Learning</a>.</strong> All rights
                 reserved.
             </footer>
             <!--Footer Section End-->

@@ -50,13 +50,13 @@
                         @endif
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" style="display: none;">
                         <label>User Type</label>
                         <br/>
-                        <input type="radio" name="user_type" value="0" checked="" />
+                        <input type="radio" name="user_type" value="0"  />
                         <label for="admin" >Admin</label>
 
-                        <input type="radio" name="user_type" value="1" />
+                        <input type="radio" name="user_type" value="1" checked=""/>
                         <label for="admin" >User</label>
 
                         @if ($errors->has('user_type'))

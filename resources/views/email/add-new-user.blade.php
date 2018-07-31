@@ -1,5 +1,5 @@
 <div>
-    Welcome to Enyota
+    Welcome to Kirana
     <br/>
     <br/>
     This is your Login details:

@@ -16,7 +16,7 @@ class AdminController extends Controller {
     }
 
     public function dispatchEmail() {
-        $email = 'swapnil.gangurde@enyotalearning.com';
+        $email = 'swapnil.gangurde@Kiranalearning.com';
         //php artisan queue:table
         //php artisan migrate
         // .env QUEUE_DRIVER=database

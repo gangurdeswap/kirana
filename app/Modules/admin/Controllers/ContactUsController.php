@@ -13,7 +13,7 @@ class ContactUsController extends Controller {
 
     public function index() {
 //        $contact_us = new ContactUs;
-//        $contact_us->email = 'swapnil.gangurde@enyotalearning.com';
+//        $contact_us->email = 'swapnil.gangurde@Kiranalearning.com';
 //        $contact_us->message = 'tetx message';
 //        $contact_us->save();
         // This method to load contact us list page

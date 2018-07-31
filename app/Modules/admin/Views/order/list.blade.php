@@ -1,16 +1,16 @@
 @extends('layouts.admin-dashboard')
-@section('title', 'Slider')
+@section('title', 'Order Management')
 @section('content')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Slider
-            <small>List of all Slider</small>
+            Order Management
+            <small>List of all Order</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="{{url('/home')}}"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Slider</li>
+            <li class="active">Order Management</li>
         </ol>
     </section>
     <!-- Main content -->
@@ -22,21 +22,15 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <div class="row">
-                            <div class="col-sm-12 ">
-                                <div class="padding15">
-                                    <a class="btn btn-sm btn-primary" href="{{url('/slider/add/')}}">+ Add Slider</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-sm-12">
-                                <table class="table table-bordered table-hover" id="slider_list">
+                                <table class="table table-bordered table-hover" id="order_list">
                                     <thead>
                                         <tr>
                                             <th>Index</th>
-                                            <th>Slider Title</th>
-                                            <th>Created Date</th>
+                                            <th>Customer Name</th>
+                                            <th>Address</th>
+                                            <th>Item Quantity</th>
+                                            <th>Order Date</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -66,5 +60,5 @@
 <script src="{{ asset('js/datatable/dataTables.min.js') }}"></script>
 <script src="{{ asset('js/datatable/dataTables.bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/datatable/dataTables.responsive.js') }}"></script>
-<script src="{{asset('/js/admin/slider.js')}}"></script>
+<script src="{{ asset('js/admin/order_detail.js') }}"></script>
 @endsection

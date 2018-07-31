@@ -11,8 +11,8 @@
   |
  */
 Route::middleware(['checkUserLanguage'])->group(function () {
-    Route::get('/', 'WelcomController@index');
-    Route::get('/admin', 'Auth\LoginController@index')->name('login');
+    //Route::get('/', 'WelcomController@index');
+    Route::get('/', 'Auth\LoginController@index')->name('login');
     Route::get('/login', 'Auth\LoginController@index')->name('login');
     Route::post('/post-login', 'Auth\LoginController@loginUser');
     Route::get('/logout', 'Auth\LoginController@logout');

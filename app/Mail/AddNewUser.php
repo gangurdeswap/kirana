@@ -28,7 +28,7 @@ class AddNewUser extends Mailable {
      */
     public function build() {
         return $this->view('email.add-new-user')
-                        ->subject('Welcome to Enyota')
+                        ->subject('Welcome to Kirana')
                         ->with([
                             'email' => $this->data['email'],
                             'password' => $this->data['password'],

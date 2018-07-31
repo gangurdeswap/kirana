@@ -32,18 +32,18 @@
             </li>
 
             <li @if(in_array('global-setting',$all_segment)) class="active" @endif>
-                <a href="{{url('/global-setting/')}}">
+                <a href="{{url('/global-setting')}}">
                     <i class="fa fa-file-text"></i> <span>Global Settings</span>
                 </a>
             </li>
             <li @if(in_array('user', $all_segment)) class="active" @endif>
-                <a href="{{url('/user/')}}">
+                <a href="{{url('/user')}}">
                     <i class="fa fa-file-text"></i> <span>User Management</span>
                 </a>
             </li>
-            <li>
-                <a href="{{url('/slider')}}">
-                    <i class="fa fa-sliders"></i> <span>Slider Banner</span>
+             <li @if(in_array('orders', $all_segment) || in_array('order', $all_segment)) class="active" @endif>
+                <a href="{{url('/orders')}}">
+                    <i class="fa fa-file-text"></i> <span>My Orders</span>
                 </a>
             </li>
             <li  @if(in_array('contact-us',$all_segment)) class="active" @endif>

@@ -55,19 +55,17 @@ Route::group(array('module' => 'Admin', 'namespace' => 'App\EnlModules\admin\Con
      * User Management route end here
      */
 
-    /*
-     * Slider Banner route start here
-     */
-    Route::get('/slider', 'SliderController@index');
-    Route::get('/get-all-slider', 'SliderController@getsliderData');
-    Route::get('/slider/add', 'SliderController@addSlider');
-    Route::post('/slider/add', 'SliderController@addSliderPost');
-    Route::get('/slider/edit/{slider_id}', 'SliderController@editSlider');
-    Route::post('/slider/edit/{slider_id}', 'SliderController@editSliderPost');
-    Route::post('/slider/delete/{slider_id}', 'SliderController@deleteSlider');
-    /*
-     * Slider Banner route end here
-     */
+/*
+* My Orders
+*/
+   Route::get('/orders', 'OrderController@index');
+   Route::get('/get-all-orders', 'OrderController@getOrderData');
+   Route::get('/order/edit/{order_id}', 'OrderController@editOrder');
+   Route::post('/post-item-price/{order_id}', 'OrderController@editPostOrder');
+
+/*
+* My Orders
+*/
 
     Route::get('/error-404', function () {
         return view('error-404');
